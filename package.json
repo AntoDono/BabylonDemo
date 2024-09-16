@@ -1,0 +1,24 @@
+{
+  "name": "skrunkle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "concurrently \"cd cms && npm run dev\" \"cd nuxt-client && npm run dev\" \"cd server && npm run dev\"",
+    "setup": "concurrently \"cd cms && npm i\" \"cd nuxt-client && npm i\" \"cd server && npm i\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitechtimes/Skrunkle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sitechtimes/Skrunkle/issues"
+  },
+  "homepage": "https://github.com/sitechtimes/Skrunkle#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

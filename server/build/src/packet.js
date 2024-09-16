@@ -8,12 +8,17 @@ var PacketType;
     PacketType["movement"] = "Movement";
     PacketType["mesh"] = "Mesh";
     PacketType["close"] = "Close";
-    PacketType["impulse"] = "Impulse";
+    PacketType["interaction"] = "Interaction";
+    PacketType["chat"] = "Chat";
+    PacketType["player_creation"] = "PlayerCreation";
+    PacketType["request_mesh"] = "RequestMesh";
 })(PacketType = exports.PacketType || (exports.PacketType = {}));
 var Packet = /** @class */ (function () {
-    function Packet(packetType, data) {
+    function Packet(packetType, data, uid) {
         this.type = packetType;
         this.payload = data;
+        if (uid)
+            this.uid = uid;
     }
     return Packet;
 }());

@@ -44,19 +44,19 @@ export class Logger{
     }
 
     public warn(message: any): void{
-        console.log(`${color.BgCyan}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgYellow}${message}${color.Reset}`)
+        console.log(`${color.BgYellow}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgYellow}${message}${color.Reset}`)
     }
 
     public error(message: any): void{
-        console.log(`${color.BgCyan}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgRed}${message}${color.Reset}`)
+        console.log(`${color.BgRed}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgRed}${message}${color.Reset}`)
     }
 
     public pass(message: any): void{
-        console.log(`${color.BgCyan}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgGreen}${message}${color.Reset}`)
+        console.log(`${color.BgGreen}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgGreen}${message}${color.Reset}`)
     }
 
     public progress(message: any): void{
-        console.log(`${color.BgCyan}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgCyan}${message}${color.Reset}`)
+        console.log(`${color.BgMagenta}[${this._gettime()}]${color.Reset} ${color.FgMagenta}[${this._section}]: ${color.FgCyan}${message}${color.Reset}`)
     }
 
     public interval_logger(ms: number, callback: Function): void{
